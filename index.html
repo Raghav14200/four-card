@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        background-color: hsl(0, 0%, 98%);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      p,
+      h1 {
+        text-align: center;
+        line-height: 1.5;
+        font-weight: 200;
+        color: hsl(229, 6%, 66%);
+      }
+
+      h1 {
+        margin-top: 3.5rem;
+        font-weight: 200;
+      }
+      .ra {
+        font-weight: 600;
+        color: hsl(234, 12%, 34%);
+      }
+      .container {
+        width: 1200px;
+        margin: 50px auto 0;
+        position: relative;
+        height: 60vh;
+      }
+      .container div {
+        position: absolute;
+        width: 32%;
+        height: 48%;
+        background-color: white;
+        box-shadow: 0 8px 12px 0px hsl(229, 6%, 66%);
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 15px 30px 0 25px;
+      }
+      .container div p {
+        text-align: left;
+        margin-top: -7px;
+      }
+      .container div img {
+        margin-left: 75%;
+      }
+      .team {
+        top: 0;
+        left: 34%;
+        border-top: solid 5px hsl(0, 78%, 62%);
+      }
+
+      .karma {
+        top: 52%;
+        left: 34%;
+        border-top: solid 5px hsl(34, 97%, 64%);
+      }
+      .super {
+        top: 30%;
+        border-top: solid 5px hsl(180, 62%, 55%);
+      }
+      .calc {
+        top: 30%;
+        right: 0;
+        border-top: solid 5px hsl(212, 86%, 64%);
+      }
+      @media (max-width: 550px) {
+        .container {
+          margin: 20px auto 0;
+          width: 90%;
+        }
+        .container div {
+          width: 100%;
+          position: static;
+          margin-bottom: 30px;
+          height: 250px;
+        }
+        .container div img {
+          margin-top: 40px;
+        }
+        p {
+          text-align: left;
+          font-size: 13px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Reliable, efficient delivery<br />
+      <span class="ra">Powered by Technology</span>
+    </h1>
+    <p>
+      Our Artificial Intelligence powered tools use millions of project data<br />
+      points to ensure that your project is successful
+    </p>
+    <div class="container">
+      <div class="super">
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="images/icon-supervisor.svg" />
+      </div>
+      <div class="team">
+        <h3>Team Builder</h3>
+        <p>
+          Scans our talent network to create the optimal team for your project
+        </p>
+        <img src="images/icon-team-builder.svg" />
+      </div>
+      <div class="karma">
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src="images/icon-karma.svg" />
+      </div>
+      <div class="calc">
+        <h3>Calculator</h3>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="images/icon-calculator.svg" />
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Raghavendra Achar</a>.
+      </p>
+    </footer>
+  </body>
+</html>
